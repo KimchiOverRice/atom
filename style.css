@@ -1,0 +1,309 @@
+/*#logo {
+  font-family: 'Comfortaa', cursive;
+  color:white
+}*/
+html, body {
+  width:100%;
+  height:100%;
+  margin:0px;
+}
+h1{
+  color: white;
+  font-size: 55px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  margin: 0px;
+}
+h4{
+  color: white;
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: normal;
+}
+h5{
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 0px;
+  font-weight: normal;
+}
+h6{
+  color: white;
+  font-size: 10px;
+  font-family: 'Exo 2', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+table{
+  width: 1000px;
+  height: 250px;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Arial', sans-serif;
+}
+caption{
+  text-align: left;
+}
+#sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 0, 0.651);
+}
+#sidenav_container{
+  position: relative;
+  margin: auto;
+}
+#backbutton{
+  margin-bottom: 10px;
+}
+#navwrapper {
+  width: 75px;
+  margin: auto;
+}
+#wrapper {
+  width: 1000px;
+  margin: auto;
+  background-color: black;
+}
+#stwrapper {
+  width: 800px;
+  margin-left: 200px;
+  background-color: black;
+}
+body {
+  background-image: url(./starfield-banner.jpg);
+}
+#logo {
+  width: 100%;
+  height: 85px;
+  background-color: black;
+}
+#stlogo{
+  margin-left: 7px;
+  margin-bottom: 20px;
+}
+#atomlogo {
+  margin: 20px 0px 0px 30px;
+}
+#atom {
+  width: 100%;
+  color: black;
+  font-size: 8px;
+  font-family: 'Exo 2', sans-serif;
+}
+#team {
+  background-color: yellow;
+}
+#header1 {
+  width: 100%;
+  padding-top: 20px;
+  /*background-color: blue;*/
+}
+#rspjmp {
+  width: 100%;
+  height: 25px;
+  color: white;
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+  /*background-color: pink;*/
+}
+#subheader {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  /*background-color: pink;*/
+}
+#graph{
+  width: 1000px;
+  height: 500px;
+  background-color: magenta;
+}
+#stgraph{
+  width: 800px;
+  height: 500px;
+  /* background-color: magenta; */
+}
+#chart{
+  width: 100%;
+}
+#ytext{
+  width: 150px;
+  height: 500px;
+  line-height: 500px;
+  text-align: right;
+  float: left;
+  background-color: blue;
+}
+
+#ytext2{
+  width: 150px;
+  height: 500px;
+  line-height: 250px;
+  float: left;
+  background-color: blue;
+}
+
+#xtext {
+  margin: auto;
+  width: 700px;
+  height:50px;
+  background-color: khaki;
+}
+#xtext_container {
+  width: 1000px;
+  height: 100px;
+  background-color: lawngreen;
+}
+#plot{
+  height: 500px;
+  width: 700px;
+  float: left;
+  background-color: grey;
+}
+#stplot{
+  height: 500px;
+  width: 707px;
+  background-color: grey;
+}
+#plotleft {
+  height: 500px;
+  width: 150px;
+  float: left;
+  background-color: green;
+}
+#xlabel{
+  width: 100%;
+  height: 25px;
+  float: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 20px 0px 10px 0px;
+  background-color: pink;
+}
+#plotdscrp{
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 20px 0px 10px 0px;
+}
+#header2{
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  margin: 50px 0px 50px 0px;
+}
+#iconwrapper {
+  width: 750px;
+  margin: auto;
+  background-color: magenta;
+}
+#subrow{
+  position: relative;
+  width: 100%;
+  background-color: blue;
+}
+#sdwrapper {
+  width: 800px;
+  margin: auto;
+}
+#subdscrp{
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 30px 0px 25px 0px;
+  /*background-color: blue;*/
+}
+#subbody{
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 30px 0px 10px 0px;
+}
+#header3{
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  margin: 50px 0px 50px 0px;
+}
+#reclist{
+  color: white;
+  font-size: 20px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 10px 0px 10px 0px;
+  /*background-color: blue;*/
+}
+#sourcebar{
+  width: 100%;
+  height: 300px;
+  margin: 50px 0px 7px 0px;
+  padding-top: 20px;
+  background-color: rgba(71, 71, 71, 0.726);
+}
+#srcwrapper {
+  width: 1000px;
+  margin: auto;
+}
+#header4{
+  color: white;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+}
+#sourcelist{
+  color: white;
+  font-size: 17px;
+  font-family: 'Arial', sans-serif;
+}
+#strip{
+  width: 100%;
+  height: 15px;
+  margin: 0px 0px 7px 0px;
+  background-color: #fdc814;
+}
+#footerbar{
+  width: 100%;
+  height: 150px;
+  margin: 0px 0px 7px 0px;
+  background-color: #0b3d91;
+}
+#footerlogo {
+  margin: 40px 0px 0px 40px;
+}
+.icon{
+  position: relative;
+  float: left;
+  height: 75px;
+  width: 125px;
+}
+.iconrow {
+  width: 750px;
+  height: 75px;
+  margin: auto;
+  white-space: nowrap;
+  /*background-color: magenta;*/
+}
+.iconrow img{
+  /*background-color: blue;*/
+  display: inline;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+img.center {
+  margin: auto;
+  display: block;
+}
+.center {
+  text-align: center;
+}
