@@ -38,9 +38,17 @@ h5{
   font-size: 15px;
   font-family: 'Exo 2', sans-serif;
   margin: 0px;
-  font-weight: lighter;
+  font-weight: bolder;
+  line-height: 2.0;
 }
 h6{
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  margin: 0px;
+  font-weight: lighter;
+}
+h7{
   color: white;
   font-size: 10px;
   font-family: 'Exo 2', sans-serif;
@@ -52,6 +60,7 @@ p{
   color: white;
   font-size: 15px;
   font-family: 'Exo 2', sans-serif;
+  line-height: 1.6;
 }
 table{
   width: 1000px;
@@ -123,7 +132,8 @@ body {
 }
 #subheader {
   width: 100%;
-  margin: 10px 0px 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   /*background-color: pink;*/
 }
 #graph{
@@ -179,6 +189,12 @@ body {
   float: left;
   background-color: rgba(145, 202, 255, 0.397);
 }
+#stplotleft-economics{
+  width: 50px;
+  height: 509px;
+  float: left;
+  /* background-color: rgba(145, 202, 255, 0.397); */
+}
 #plotright {
   height: 500px;
   width: 150px;
@@ -191,6 +207,12 @@ body {
   float: left;
   background-color: rgba(145, 202, 255, 0.397);
 }
+#stplotright-economics {
+  height: 509px;
+  width: 50px;
+  float: left;
+  /* background-color: rgba(145, 202, 255, 0.397); */
+}
 #plotdscrp{
   width: 100%;
   height: 50px;
@@ -201,11 +223,22 @@ body {
   margin: auto;
   background-color: black;
 }
+#pgindwrapper-economics {
+  width: 100px;
+  margin: auto;
+  background-color: black;
+}
 #pgind{
   width: 100%;
   height: 15px;
   margin: 20px 0px 0px 0px;
   background-color: rgba(145, 202, 255, 0.397);
+}
+#pgind-economics{
+  width: 100%;
+  height: 15px;
+  margin: 20px 0px 0px 0px;
+  /* background-color: rgba(145, 202, 255, 0.397); */
 }
 #header2{
   width: 100%;
@@ -236,6 +269,12 @@ body {
   font-family: 'Exo 2', sans-serif;
   margin: 10px 0px 10px 0px;
   /*background-color: blue;*/
+}
+#stlist{
+  color: white;
+}
+#intextsource{
+  color: gray;
 }
 #sourcebar{
   width: 100%;
