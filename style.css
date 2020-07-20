@@ -66,6 +66,9 @@ p{
   font-family: 'Exo 2', sans-serif;
   line-height: 1.6;
 }
+li{
+  margin-bottom: 15px;
+}
 table{
   width: 1000px;
   height: 250px;
