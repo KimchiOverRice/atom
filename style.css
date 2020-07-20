@@ -2,6 +2,10 @@
   font-family: 'Comfortaa', cursive;
   color:white
 }*/
+* {
+	outline: none;
+}
+
 html, body {
   width:100%;
   height:100%;
@@ -331,4 +335,30 @@ img.center {
 }
 .center {
   text-align: center;
+}
+.button{
+  color: white;
+  font-size: 30px;
+  border: none;
+  background-color: rgb(146, 146, 146);
+  vertical-align: middle;
+  padding: 5px;
+  position: relative;;
+  top:45%;
+}
+
+.button:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.button:active {
+  background-color: rgb(209, 209, 209);
+}
+
+.buttonleft {
+  left:12px;
+}
+
+.buttonright {
+  left:10px;
 }

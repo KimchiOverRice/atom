@@ -9,6 +9,7 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <script src="plotly-latest.min.js"></script>
   </head>
   <body>
     <div id="sidenav">
@@ -22,7 +23,7 @@
           <div class="iconbar">
             <a href="st-passenger-air-travel.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
             <h7>Passenger Air Travel</h7>
-            <a href="st-economics.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
+            <a href="st-economics-int.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
             <h7>Economics</h7>
             <a href="st-environment.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
             <h7>Environment</h7>
@@ -41,12 +42,25 @@
           <h1>ECONOMICS</h1>
       </div>
       <div id="subheader">
-        <h4>[short description]</h4>
+        <h4> </h4>
       </div>
       <div id ="stgraph">
-        <div id="stplotleft-economics"></div>
-        <div id="stplot"><img class="center" src="plt-economics-1.png" alt="foograph" width="700" height="509"></div>
-        <div id="stplotright-economics"></div>
+        <div id="stplotleft-economics">
+          <button class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button>
+        </div>
+        <div id="stplot">
+          <div class="graphslide">
+            <div id="48e47fca-5364-4c05-90fa-ede330f48470" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="econplt1-stockprices.js"></script>
+          </div>
+          <div class="graphslide">
+            <div id="48e47fca-5364-4c05-90fa-ede330f48470_b" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="econ-graph-script_1b.js"></script>
+          </div>
+        </div>
+        <div id="stplotright-economics">
+            <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
+        </div>
       </div>
       <div id="pgindwrapper-economics">
         <div id="pgind-economics" class="center">
@@ -199,6 +213,30 @@
           </div>
         </div>
       </div>
-    <script src="script.js"></script>
+    <script>
+      let index = 1;
+      showdiv(index);
+
+      function nextdiv(n){
+        showdiv(index += n);
+      }
+
+      function showdiv(n){
+        let graphs = document.getElementsByClassName("graphslide");
+        let i;
+
+        for(i=0; i<graphs.length; i++){
+          graphs[i].style.display = "none";
+        }
+
+        if(n <= 0){
+          index = 1;
+        }
+        if(n > graphs.length){
+          index = graphs.length;
+        }
+        graphs[index - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>
