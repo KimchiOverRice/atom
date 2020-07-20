@@ -9,6 +9,7 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <script src="plotly-latest.min.js"></script>
   </head>
   <body>
     <div id="sidenav">
@@ -28,8 +29,6 @@
             <h7>Environment</h7>
             <a href="st-manufacturing.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
             <h7>Manufacturing</h7>
-            <a href="st-services.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
-            <h7>Services</h7>
             <a href="st-cargo.html"><img src="icon.png" alt="fooicon" width="60" height="60" /></a>
             <h7>Cargo</h7>
           </div>
@@ -41,33 +40,38 @@
           <h1>PASSENGER AIR TRAVEL</h1>
       </div>
       <div id="subheader">
-        <h4>Short-paragraph description of the subtopic. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam</h4>
+        <h4> </h4>
       </div>
       <div id ="stgraph">
-        <div id="stplotleft"></div>
-        <div id="stplot"><img class="center" src="graph_placeholder.png" alt="foograph" width="700" height="500"></div>
-        <div id="stplotright"></div>
+        <div id="stplotleft">
+          <button class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button>
+        </div>
+        <div id="stplot">
+          <div class="graphslide">
+            <div id="48e47fca-5364-4c05-90fa-ede330f48470" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="econplt1-stockprices.js"></script>
+          </div>
+          <div class="graphslide">
+            <div id="48e47fca-5364-4c05-90fa-ede330f48470_b" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="econ-graph-script_1b.js"></script>
+          </div>
+        </div>
+        <div id="stplotright">
+            <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
+        </div>
       </div>
       <div id="pgindwrapper">
         <div id="pgind" class="center">
         </div>
       </div>
       <div id="stgraphtext">
-        <p>Graph specific info that changes with plot [switching isn't implemented yet]. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        <!-- <p>Graph specific info that changes with plot [switching isn't implemented yet]. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p> -->
       </div>
       <div id="subbody">
-        <p>Subtopic body text. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
-        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+        <p>Text</p>
       </div>
     </div>
     <div id="footer">
@@ -82,6 +86,30 @@
           </div>
         </div>
       </div>
-    <script src="script.js"></script>
+    <script>
+      let index = 1;
+      showdiv(index);
+
+      function nextdiv(n){
+        showdiv(index += n);
+      }
+
+      function showdiv(n){
+        let graphs = document.getElementsByClassName("graphslide");
+        let i;
+
+        for(i=0; i<graphs.length; i++){
+          graphs[i].style.display = "none";
+        }
+
+        if(n <= 0){
+          index = 1;
+        }
+        if(n > graphs.length){
+          index = graphs.length;
+        }
+        graphs[index - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>
