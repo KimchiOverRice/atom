@@ -66,6 +66,9 @@ p{
   font-family: 'Exo 2', sans-serif;
   line-height: 1.6;
 }
+li{
+  margin-bottom: 15px;
+}
 table{
   width: 1000px;
   height: 250px;
@@ -239,6 +242,9 @@ body {
 #subbody{
   width: 100%;
   margin: 30px 0px 10px 0px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
 }
 #header3{
   width: 100%;
@@ -248,7 +254,6 @@ body {
   color: white;
   font-size: 17px;
   font-family: 'Exo 2', sans-serif;
-  line-height: 2.0;
   margin: 10px 0px 10px 0px;
   /*background-color: blue;*/
 }
