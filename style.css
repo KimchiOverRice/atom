@@ -124,7 +124,7 @@ body {
 }
 #logo {
   width: 100%;
-  height: 85px;
+  height: auto;
   background-color: black;
 }
 #stlogo{
@@ -132,11 +132,51 @@ body {
   margin-bottom: 20px;
 }
 #atomlogo {
-  margin: 20px 0px 0px 30px;
+  margin: 20px 20px 0px 30px;
+  float: left;
 }
 #header1 {
   width: 100%;
   padding-top: 20px;
+  /*background-color: blue;*/
+}
+#titlecontainer{
+  width: 80%;
+  height: auto;
+  padding-top: 30px;
+  float: left;
+}
+#title1 {
+  width: auto;
+  color: white;
+  /* font-size: 65px; */
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: lighter;
+  float: left;
+  margin: 0px;
+  /*background-color: blue;*/
+}
+#title2 {
+  width: 80%;
+  padding-top: 0px;
+  color: white;
+  font-size: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 6px;
+  margin: 0px;
+  /*background-color: blue;*/
+}
+#cvd {
+  width: auto;
+  color: rgb(255, 0, 64);
+  /* font-size: 65px; */
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: lighter;
+  float: left;
+  margin: 0px;
   /*background-color: blue;*/
 }
 #subheader {
