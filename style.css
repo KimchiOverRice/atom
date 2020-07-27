@@ -11,6 +11,18 @@ html, body {
   height:100%;
   margin:0px;
 }
+a{
+  color: rgb(0, 89, 255);
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(255, 166, 0);
+  text-decoration: none;
+}
+a:active{
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
 h1{
   color: white;
   font-size: 55px;
@@ -124,8 +136,8 @@ body {
 }
 #logo {
   width: 100%;
-  height: auto;
-  background-color: black;
+  height: 100px;
+  /* background-color: black; */
 }
 #stlogo{
   margin-left: 7px;
@@ -141,10 +153,15 @@ body {
   /*background-color: blue;*/
 }
 #titlecontainer{
-  width: 80%;
+  width: 100%;
   height: auto;
   padding-top: 30px;
   float: left;
+}
+#titlewrapper{
+  width: 1000px;
+  margin: auto;
+  padding-top: 30px;
 }
 #title1 {
   width: auto;
@@ -343,7 +360,7 @@ body {
 }
 .iconrow {
   width: 800px;
-  height: 75px;
+  height: 85px;
   margin: auto;
   white-space: nowrap;
   /*background-color: magenta;*/
@@ -360,6 +377,9 @@ img.center {
 }
 .center {
   text-align: center;
+}
+.vertcenter{
+  vertical-align: middle;
 }
 .button{
   color: white;

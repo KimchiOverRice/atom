@@ -15,26 +15,18 @@
 <body>
   <div id="logo">
     <img id="atomlogo" src="atomfull-w.png" alt="ATOM Logo" width="187" height="67">
-    <div id="titlecontainer">
+    <div id="titlewrapper">
         <div id="title1">
-          IMPACT OF&nbsp;
-        </div>
-        <div id="cvd">
-          COVID-19&nbsp;
+          IMPACT OF <span style="color: rgb(255, 0, 64)">COVID-19</span> ON AVIATION IN AMERICA
         </div>
         <!--<img src="coronavirus_plane.gif" width="80" height="80">-->
         <img style="position: fixed; right: 30px; top: 20px;" src="coronavirus_plane.gif" width="130" height="130">
-        <div id="title1">
-            ON AVIATION IN AMERICA
-          </div>
       </div>
+    </div>
   </div>
   <div id="wrapper">
-    <!-- <div id="title2">
-      ON AVIATION IN AMERICA
-    </div> -->
     <div id="subheader">
-      <h4>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <h4>Consectetur adipiscing elit, sed do eiusmod <a href="st-environment.html">tempor</a> incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
     </div>
     <div id="graph">
@@ -54,28 +46,26 @@
   </div>
   </div>
   <div class="iconrow">
-    <a href="st-passenger-air-travel.html"><img onhover="subhover(0)" src="passenger-icon.png" alt="fooicon" width="75"
-        height="75" /></a>
-    <a href="st-economics.html"><img onhover="subhover(1)" src="economics-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-environment.html"><img onhover="subhover(2)" src="environement-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-manufacturing.html"><img onhover="subhover(3)" src="manufacturing-icon.png" alt="fooicon" width="75"
-        height="75" /></a>
-    <a href="st-cargo.html"><img onhover="subhover(4)" src="cargo-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-passenger-air-travel.html"><img id="0" class="vertcenter" src="passenger-icon.png" border-color: red; border-width: 10px;" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-economics.html"><img id="1" class="vertcenter" src="economics-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-environment.html"><img id="2" class="vertcenter" src="environement-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-manufacturing.html"><img id="3" class="vertcenter" src="manufacturing-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-cargo.html"><img id="4" class="vertcenter" src="cargo-icon.png" alt="fooicon" width="75" height="75" /></a>
   </div>
   <div id="stdscrpwrapper">
     <div id="subdscrp">
-      <p id="subtext-pas" class="hoverbox">Passenger Air Travel: Sed do eiusmod tempor incididunt ut labore et dolore
+      <p id="subtext-pas" class="hoverbox" style="display: none">Passenger Air Travel: Sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua sed don sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed don Sed do eiusmod
         labore eta</p>
-      <p id="subtext-econ" class="hoverbox">Economy: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      <p id="subtext-econ" class="hoverbox" style="display: none">Economy: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         sed don sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed don Sed do eiusmod labore eta</p>
-      <p id="subtext-env" class="hoverbox">Environment: Sed do eiusmod tempor incididunt ut labore et dolore magna
+      <p id="subtext-env" class="hoverbox" style="display: none">Environment: Sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua sed don sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed don Sed do eiusmod labore
         eta</p>
-      <p id="subtext-man" class="hoverbox">Manufacturing: Sed do eiusmod tempor incididunt ut labore et dolore magna
+      <p id="subtext-man" class="hoverbox" style="display: none">Manufacturing: Sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua sed don sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed don Sed do eiusmod labore
         eta</p>
-      <p id="subtext-car" class="hoverbox">Cargo: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed
+      <p id="subtext-car" class="hoverbox" style="display: none">Cargo: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed
         don sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed don Sed do eiusmod labore eta</p>
     </div>
   </div>
@@ -185,15 +175,48 @@
     </div>
   </div>
   <script>
-    let texts = document.getElementsByClassName("hoverbox")
-    texts[0].style.display = "block"
+    let texts = document.getElementsByClassName("hoverbox");
+    texts[0].style.display = "block";
+
+    let icon0 = document.getElementById("0");
+    let icon1 = document.getElementById("1");
+    let icon2 = document.getElementById("2");
+    let icon3 = document.getElementById("3");
+    let icon4 = document.getElementById("4");
+
+    let icons = [icon0, icon1, icon2, icon3, icon4];
+
+    icon0.style.borderStyle = "solid";
+    icon0.style.borderColor = "white";
+    icon0.style.borderWidth = "5px";
+    icon0.style.borderRadius = "20%";
+
+    icon0.addEventListener("mouseover", function(){subhover(0);});
+    icon1.addEventListener("mouseover", function(){subhover(1);});
+    icon2.addEventListener("mouseover", function(){subhover(2);});
+    icon3.addEventListener("mouseover", function(){subhover(3);});
+    icon4.addEventListener("mouseover", function(){subhover(4);});
+
+    function test(){
+      console.log("test");
+      alert("privet");
+    }
 
     function subhover(n) {
       let i;
       for (i = 0; i < texts.length; i++) {
         texts[i].style.display = "none";
+
+        icons[i].style.borderColor = "black";
+        icons[i].style.borderWidth = "5px";
+        icons[i].style.borderRadius = "20%";
       }
       texts[n].style.display = "block";
+
+      icons[n].style.borderStyle = "solid";
+      icons[n].style.borderColor = "white";
+      icons[n].style.borderWidth = "5px";
+      icons[n].style.borderRadius = "20%";
     }
   </script>
 </body>
