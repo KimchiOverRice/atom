@@ -411,3 +411,27 @@ img.center {
 .stbutton:hover{
   border-color: white;
 }
+table, th{
+  border: 1px solid white;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bolder;
+}
+table{
+  width:100%;
+}
+table td + td{
+  border-left: 1px solid white;
+
+}
+th{
+  padding: 2%;
+}
+td{
+  padding: 2%;
+}
+#cares td{
+  width: 50%;
+  text-align: left;
+}
