@@ -439,3 +439,7 @@ td{
   width: 50%;
   text-align: left;
 }
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
