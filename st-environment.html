@@ -58,6 +58,7 @@
       </div>
       <div id="pgindwrapper">
         <div id="pgind" class="center">
+          <div id="ind1" class="indcircle"></div>
         </div>
       </div>
       <div id="stgraphtext">
@@ -135,10 +136,12 @@
 
       function showdiv(n){
         let graphs = document.getElementsByClassName("graphslide");
+        let inds = document.getElementsByClassName("indcircle");
         let i;
 
         for(i=0; i<graphs.length; i++){
           graphs[i].style.display = "none";
+          inds[i].style.backgroundColor = "rgb(88, 88, 88)";
         }
 
         if(n <= 0){
@@ -148,6 +151,7 @@
           index = graphs.length;
         }
         graphs[index - 1].style.display = "block";
+        inds[index - 1].style.backgroundColor = "white";
       }
     </script>
   </body>

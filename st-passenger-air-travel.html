@@ -51,32 +51,36 @@
       </div>
       <div id ="stgraph">
         <div id="stplotleft">
-          <button class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button>
+          <button id="leftbutton" class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button>
         </div>
         <div id="stplot">
           <div class="graphslide">
             <div id="5f5c1991-91da-4e44-bdd6-89b030be26d3" class="plotly-graph-div" style="height:500px; width:700px;"></div>
             <script type="text/javascript" src="psngrplt1-tsa.js"></script>
           </div>
-          <div class="graphslide">
+          <div class="graphslide" style="display: none">
             <div id="599c421f-ac1c-490b-914b-ec4829ac9294" class="plotly-graph-div" style="height:500px; width:700px;"></div>
             <script type="text/javascript" src="psngrplt2-rpms.js"></script>
           </div>
-          <div class="graphslide">
+          <div class="graphslide" style="display: none">
             <div id="4e0863f9-7405-47f5-b7ad-db77af3913d9" class="plotly-graph-div" style="height:500px; width:700px;"></div>
             <script type="text/javascript" src="psngrplt3-enplanements.js"></script>
           </div>
-          <div class="graphslide">
+          <div class="graphslide" style="display: none">
             <div id="e526b014-9f87-4f42-84a6-0968b9cd62ca" class="plotly-graph-div" style="height:500px; width:700px;"></div>
             <script type="text/javascript" src="psngrplt4-rtt.js"></script>
           </div>
         </div>
         <div id="stplotright">
-            <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
+            <button id="rightbutton" class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
         </div>
       </div>
       <div id="pgindwrapper">
         <div id="pgind" class="center">
+          <div id="ind1" class="indcircle"></div>
+          <div id="ind2" class="indcircle"></div>
+          <div id="ind3" class="indcircle"></div>
+          <div id="ind4" class="indcircle"></div>
         </div>
       </div>
       <div id="stgraphtext">
@@ -135,10 +139,16 @@
 
       function showdiv(n){
         let graphs = document.getElementsByClassName("graphslide");
+        let inds = document.getElementsByClassName("indcircle");
+
+        let lb = document.getElementById("leftbutton");
+        let rb = document.getElementById("rightbutton");
+
         let i;
 
         for(i=0; i<graphs.length; i++){
           graphs[i].style.display = "none";
+          inds[i].style.backgroundColor = "rgb(88, 88, 88)";
         }
 
         if(n <= 0){
@@ -147,7 +157,20 @@
         if(n > graphs.length){
           index = graphs.length;
         }
+        if(index == 1){
+          lb.style.backgroundColor = "black";
+        }
+        else{
+          lb.style.backgroundColor = "rgb(146, 146, 146)";
+        }
+        if(index == graphs.length){
+          rb.style.backgroundColor = "black";
+        }
+        else{
+          rb.style.backgroundColor = "rgb(146, 146, 146)";
+        }
         graphs[index - 1].style.display = "block";
+        inds[index - 1].style.backgroundColor = "white";
       }
     </script>
   </body>
