@@ -432,7 +432,7 @@ table, th{
   text-align: center;
   font-size: 15px;
   font-family: 'Exo 2', sans-serif;
-  font-weight: bolder;
+  font-weight: lighter;
 }
 table{
   width:100%;
@@ -455,7 +455,5 @@ td{
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-grow: 1;
-  flex-basis: 0;
 
 }
