@@ -14,17 +14,17 @@ html, body {
 a{
   /*color: rgb(0, 89, 255);*/
   color:  white;
-  text-decoration-color: #fdc814;
+  text-decoration-color: #ebb116;
   
   /*text-decoration: none;*/
 }
 a:hover{
   /*color: rgb(255, 166, 0);*/
-  color: red;
+  color: #ff5c43;
   text-decoration: none;
 }
 a:active{
-  color: rgb(255, 0, 0);
+  color: #337eff;
   text-decoration: none;
 }
 h1{
@@ -41,21 +41,21 @@ h2{
   font-weight: lighter;
   margin: 0px;
 }
-h3{
+/* h3{
   color: white;
   font-size: 25px;
   font-family: 'Exo 2', sans-serif;
   font-weight: lighter;
-}
+} */
 h4{
   color: white;
-  font-size: 20px;
+  font-size: 21px;
   font-family: 'Exo 2', sans-serif;
   font-weight: lighter;
 }
 h5{
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Exo 2', sans-serif;
   margin: 0px;
   font-weight: bolder;
@@ -63,7 +63,7 @@ h5{
 }
 h6{
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Exo 2', sans-serif;
   margin: 0px;
   padding-bottom: 15px;
@@ -79,12 +79,15 @@ h7{
 }
 p{
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Exo 2', sans-serif;
   line-height: 1.6;
 }
 li{
   margin-bottom: 15px;
+  color: white;
+  font-size: 17px;
+  font-family: 'Exo 2', sans-serif;
 }
 table{
   width: 1000px;
@@ -160,7 +163,7 @@ body {
   width: 100%;
   height: auto;
   padding-top: 30px;
-  float: left;
+  float: right;
 }
 #titlewrapper{
   width: 1000px;
@@ -171,7 +174,7 @@ body {
   width: auto;
   color: white;
   /* font-size: 65px; */
-  font-size: 40px;
+  font-size: 55px;
   font-family: 'Dosis', sans-serif;
   font-weight: lighter;
   float: left;
@@ -350,13 +353,13 @@ body {
   width: 100%;
   height: 15px;
   margin: 0px 0px 7px 0px;
-  background-color: #fdc814;
+  background-color: #ebb116;
 }
 #ststrip{
   width: 100%;
   height: 15px;
   margin: 100px 0px 7px 0px;
-  background-color: #fdc814;
+  background-color: #ebb116;
 }
 #footerbar{
   width: 100%;
