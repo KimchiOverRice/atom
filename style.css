@@ -41,12 +41,12 @@ h2{
   font-weight: lighter;
   margin: 0px;
 }
-/* h3{
+h3{
   color: white;
   font-size: 25px;
   font-family: 'Exo 2', sans-serif;
   font-weight: lighter;
-} */
+} 
 h4{
   color: white;
   font-size: 21px;
@@ -137,6 +137,11 @@ caption{
   width: 800px;
   /* margin-left: 200px; */
   margin: auto;
+  background-color: black;
+}
+#about-wrap{
+  width: 80%;
+  margin:auto;
   background-color: black;
 }
 body {
