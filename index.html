@@ -42,11 +42,11 @@
   </div>
   </div>
   <div class="iconrow">
-    <a href="st-passenger-air-travel.html"><img id="0" class="vertcenter" src="passenger-icon.png" border-color: red; border-width: 10px;" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-economics.html"><img id="1" class="vertcenter" src="economics-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-environment.html"><img id="2" class="vertcenter" src="environement-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-manufacturing.html"><img id="3" class="vertcenter" src="manufacturing-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-cargo.html"><img id="4" class="vertcenter" src="cargo-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-passenger-air-travel.html"><img id="0" class="vertcenter iconbutton" src="passenger-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-economics.html"><img id="1" class="vertcenter iconbutton buttonshrink" src="economics-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-environment.html"><img id="2" class="vertcenter iconbutton buttonshrink" src="environement-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-manufacturing.html"><img id="3" class="vertcenter iconbutton buttonshrink" src="manufacturing-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-cargo.html"><img id="4" class="vertcenter iconbutton buttonshrink" src="cargo-icon.png" alt="fooicon" width="75" height="75" /></a>
   </div>
   <div id="stdscrpwrapper">
     <div id="subdscrp">
@@ -173,6 +173,8 @@
         icons[i].style.borderColor = "black";
         icons[i].style.borderWidth = "5px";
         icons[i].style.borderRadius = "20%";
+
+        icons[i].style.transform = "scale(0.9, 0.9)";
       }
       texts[n].style.display = "block";
 
@@ -180,6 +182,8 @@
       icons[n].style.borderColor = "white";
       icons[n].style.borderWidth = "5px";
       icons[n].style.borderRadius = "20%";
+
+      icons[n].style.transform = "scale(1.0, 1.0)";
     }
   </script>
 </body>
