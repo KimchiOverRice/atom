@@ -65,6 +65,18 @@
             <div id="396c362a-2c60-4020-b2e5-b509c98f07bc" class="plotly-graph-div" style="height:500px; width:700px;"></div>
             <script type="text/javascript" src="cargoplt3-stock.js"></script>
           </div>
+          <div class="graphslide" style="display: none">
+            <div id="35ee8f68-8ff8-47e1-821e-9e007651a514" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="cargoplt4-actk.js"></script>
+          </div>
+          <div class="graphslide" style="display: none">
+            <div id="a1018e5e-b11f-497d-9a03-8c71d8235f72" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="cargoplt5-clf.js"></script>
+          </div>
+          <div class="graphslide" style="display: none">
+            <div id="1e11d6f9-c633-47c3-a347-25152436621f" class="plotly-graph-div" style="height:500px; width:700px;"></div>
+            <script type="text/javascript" src="cargoplt6-pmi.js"></script>
+          </div>
         </div>
         <div id="stplotright">
             <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
@@ -75,6 +87,9 @@
           <div id="ind1" class="indcircle"></div>
           <div id="ind2" class="indcircle"></div>
           <div id="ind3" class="indcircle"></div>
+          <div id="ind4" class="indcircle"></div>
+          <div id="ind5" class="indcircle"></div>
+          <div id="ind6" class="indcircle"></div>
         </div>
       </div>
       <div id="stgraphtext">
@@ -232,17 +247,6 @@
       </div>
     </div>
     <script>
-      document.getElementById("0");
-      let icons = [icon0, icon1, icon2, icon3, icon4];
-
-      for (i = 0; i < icons.length; i++) {
-        texts[i].style.display = "none";
-
-        icons[i].style.borderColor = "black";
-        icons[i].style.borderWidth = "5px";
-        icons[i].style.borderRadius = "20%";
-      }
-
       let index = 1;
       showdiv(index);
 
