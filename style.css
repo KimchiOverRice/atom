@@ -416,6 +416,8 @@ img.center {
   border-radius: 20%;
   transition: transform 0.2s;
 }
+.hoverbox{
+}
 .hoverbutton:hover{
   border-color: rgb(255, 255, 255);
 }
