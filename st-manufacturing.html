@@ -47,7 +47,7 @@
       </div>
       <div id ="stgraph">
         <div id="stplotleft">
-          <button class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button>
+          <!-- <button class="button buttonleft" onclick="nextdiv(-1)">&#8249;</button> -->
         </div>
         <div id="stplot">
           <div class="graphslide">
@@ -56,12 +56,12 @@
           </div>
         </div>
         <div id="stplotright">
-            <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button>
+            <!-- <button class="button buttonright" onclick="nextdiv(1)">&#8250;</button> -->
         </div>
       </div>
       <div id="pgindwrapper">
         <div id="pgind" class="center">
-          <div id="ind1" class="indcircle"></div>
+          <!-- <div id="ind1" class="indcircle"></div> -->
         </div>
       </div>
       <div id="stgraphtext">
@@ -125,32 +125,32 @@
       </div>
     </div>
     <script>
-      let index = 1;
-      showdiv(index);
+      // let index = 1;
+      // showdiv(index);
 
-      function nextdiv(n){
-        showdiv(index += n);
-      }
+      // function nextdiv(n){
+      //   showdiv(index += n);
+      // }
 
-      function showdiv(n){
-        let graphs = document.getElementsByClassName("graphslide");
-        let inds = document.getElementsByClassName("indcircle");
-        let i;
+      // function showdiv(n){
+      //   let graphs = document.getElementsByClassName("graphslide");
+      //   let inds = document.getElementsByClassName("indcircle");
+      //   let i;
 
-        for(i=0; i<graphs.length; i++){
-          graphs[i].style.display = "none";
-          inds[i].style.backgroundColor = "rgb(88, 88, 88)";
-        }
+      //   for(i=0; i<graphs.length; i++){
+      //     graphs[i].style.display = "none";
+      //     inds[i].style.backgroundColor = "rgb(88, 88, 88)";
+      //   }
 
-        if(n <= 0){
-          index = 1;
-        }
-        if(n > graphs.length){
-          index = graphs.length;
-        }
-        graphs[index - 1].style.display = "block";
-        inds[index - 1].style.backgroundColor = "white";
-      }
+      //   if(n <= 0){
+      //     index = 1;
+      //   }
+      //   if(n > graphs.length){
+      //     index = graphs.length;
+      //   }
+      //   graphs[index - 1].style.display = "block";
+      //   inds[index - 1].style.backgroundColor = "white";
+      // }
     </script>
   </body>
 </html>
