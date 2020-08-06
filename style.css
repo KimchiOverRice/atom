@@ -487,3 +487,9 @@ td{
   align-items: center;
 
 }
+.profile-pic{
+  width: 95%;
+  height: 95%;
+  padding: 10px;
+
+}
