@@ -291,8 +291,10 @@ body {
   background-color: black;
 }
 #pgind{
+  display:flex;
+  justify-content: center;
   margin: auto;
-  width: 100px;
+  width: 150px;
   height: 15px;
   margin-top: 20px;
   /* background-color: yellow; */
