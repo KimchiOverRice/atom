@@ -63,10 +63,11 @@ h5{
 }
 h6{
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Exo 2', sans-serif;
   margin: 0px;
-  padding-bottom: 9px;
+  margin-top: -7px;
+  padding-bottom: 4px;
   font-weight: lighter;
 }
 /* h7{
@@ -111,7 +112,7 @@ caption{
   z-index: 1;
   top: 0;
   left: 0;
-  padding-top: 20px;
+  padding-top: 0px;
   overflow-x: visible;
   padding-left: 20px;
   /* background-color: rgba(255, 255, 0, 0.651); */
@@ -153,7 +154,7 @@ body {
 }
 #stlogo{
   margin-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 #atomlogo {
   margin: 20px 20px 0px 30px;
@@ -442,7 +443,9 @@ img.center {
 .button:active {
   background-color: rgb(209, 209, 209);
 }
-
+.separatebutton{
+  margin-top: 20px;
+}
 .buttonleft {
   left:12px;
 }
