@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
   <script src="../graphs/plotly-latest.min.js"></script>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174711189-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-174711189-1');
@@ -25,70 +25,87 @@
 
 <body>
   <div id="logo">
-    <img id="atomlogo" src="../assets/atomfull-w.png" alt="ATOM Logo" width="275" height="99">
+    <!--<img id="atomlogo" src="../assets/atomfull-w.png" alt="ATOM Logo" width="275" height="99">-->
+    <img id="atomlogo" src="../assets/atomfull-w.png" alt="ATOM Logo">
     <div id="titlewrapper">
-        <div id="title1">
-          IMPACT OF <span style="color: rgb(255, 0, 64)">COVID-19</span> ON AVIATION IN AMERICA
-        </div>
-        <!--<img src="coronavirus_plane.gif" width="80" height="80">-->
-        <img style="position: fixed; right: 30px; top: 20px;" src="../assets/coronavirus_plane.gif" width="130" height="130">
+      <div id="title1">
+        IMPACT OF <span style="color: rgb(255, 0, 64)">COVID-19</span> ON AVIATION IN AMERICA
       </div>
+      <!--<img src="coronavirus_plane.gif" width="80" height="80">-->
+      <img class="corona" src="../assets/coronavirus_plane.gif">
     </div>
   </div>
+
   <div id="wrapper">
     <div id="subheader">
-      <h4>The 2020 coronavirus pandemic has impacted all aspects of life in America, as millions who have been hospitalized with COVID-19 and others partake in social distancing in fear of contracting the virus. This fear has carried over to the aviation industry, many aspects of which have been severely impacted by this outbreak.</h4>
+      <h4>The 2020 coronavirus pandemic has impacted all aspects of life in America, as millions who have been
+        hospitalized with COVID-19 and others partake in social distancing in fear of contracting the virus. This fear
+        has carried over to the aviation industry, many aspects of which have been severely impacted by this outbreak.
+      </h4>
     </div>
     <div id="graph">
-      <div id="f62d242d-9078-48d2-95cc-456aa54b5ee4" class="plotly-graph-div" style="height:700px; width:1000px;"></div>
+      <div id="f62d242d-9078-48d2-95cc-456aa54b5ee4" class="plotly-graph-div" >
       <script type="text/javascript" src="../graphs/homeplt.js"></script>
+      </div>
     </div>
     <div id="plotdscrp" class="center">
       <p><br></p>
       <hr id="horiz" />
     </div>
-  </div>
+  
   <div id="header2" class="center">
     <h2>IMPACTED ASPECTS OF THE AIR INDUSTRY:</h2>
   </div>
-  </div>
+  
   <div class="iconrow">
-    <a href="st-passenger-air-travel.html"><img id="0" class="vertcenter iconbutton" src="../assets/passenger-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-economics.html"><img id="1" class="vertcenter iconbutton buttonshrink" src="../assets/economics-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-environment.html"><img id="2" class="vertcenter iconbutton buttonshrink" src="../assets/environment-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-manufacturing.html"><img id="3" class="vertcenter iconbutton buttonshrink" src="../assets/manufacturing-icon.png" alt="fooicon" width="75" height="75" /></a>
-    <a href="st-cargo.html"><img id="4" class="vertcenter iconbutton buttonshrink" src="../assets/cargo-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-passenger-air-travel.html"><img id="0" class="vertcenter iconbutton" src="../assets/passenger-icon.png"
+        alt="fooicon" width="75" height="75" /></a>
+    <a href="st-economics.html"><img id="1" class="vertcenter iconbutton buttonshrink"
+        src="../assets/economics-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-environment.html"><img id="2" class="vertcenter iconbutton buttonshrink"
+        src="../assets/environment-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-manufacturing.html"><img id="3" class="vertcenter iconbutton buttonshrink"
+        src="../assets/manufacturing-icon.png" alt="fooicon" width="75" height="75" /></a>
+    <a href="st-cargo.html"><img id="4" class="vertcenter iconbutton buttonshrink" src="../assets/cargo-icon.png"
+        alt="fooicon" width="75" height="75" /></a>
   </div>
   <div id="stdscrpwrapper">
     <div id="subdscrp">
-      <p id="subtext-pas" class="hoverbox" style="display: none">Passenger Air Travel - this section goes over the changes that air passenger travel has gone through. 
+      <p id="subtext-pas" class="hoverbox" style="display: none">Passenger Air Travel - this section goes over the
+        changes that air passenger travel has gone through.
         This includes the change in air passenger numbers and passenger experience.</p>
-      <p id="subtext-econ" class="hoverbox" style="display: none">Economics - this section is on the financial impact of COVID-19 on airlines. 
+      <p id="subtext-econ" class="hoverbox" style="display: none">Economics - this section is on the financial impact of
+        COVID-19 on airlines.
         It goes over company losses and government funding.</p>
-      <p id="subtext-env" class="hoverbox" style="display: none">Environment - this section goes over the environmental impact of aircraft and covers 
+      <p id="subtext-env" class="hoverbox" style="display: none">Environment - this section goes over the environmental
+        impact of aircraft and covers
         how COVID-19 has altered these impacts.</p>
-      <p id="subtext-man" class="hoverbox" style="display: none">Manufacturing - this section goes over the impact of COVID-19 on aircraft manufacturing. 
+      <p id="subtext-man" class="hoverbox" style="display: none">Manufacturing - this section goes over the impact of
+        COVID-19 on aircraft manufacturing.
         The section focuses on the mnaufacturing company Boeing.</p>
-      <p id="subtext-car" class="hoverbox" style="display: none">Cargo - this section is on the impact of COVID-19 on air cargo. 
+      <p id="subtext-car" class="hoverbox" style="display: none">Cargo - this section is on the impact of COVID-19 on
+        air cargo.
         It goes over general industry drops in activity along with an analysis on specific companies.</p>
     </div>
   </div>
+</div>
   <div id="wrapper">
     <hr id="horiz" />
     <div id="header3">
       <h2 class="center"><a href="recommendations.html">RECOMMENDATIONS</a></h2>
-      <p>Recommendations for future research and guidelines for airlines and airports are presented on this page. 
-        NASA’s aeronautics research has always been responsive to the needs of the aviation industry and 
-        will continue to support the industry through the 
-        COVID-19 pandemic. Different areas of research should be emphasized in order to better respond to the pandemic. 
-        Furthermore, health guidelines and possible plans for airlines to protect their customers and their own economic 
+      <p>Recommendations for future research and guidelines for airlines and airports are presented on this page.
+        NASA’s aeronautics research has always been responsive to the needs of the aviation industry and
+        will continue to support the industry through the
+        COVID-19 pandemic. Different areas of research should be emphasized in order to better respond to the pandemic.
+        Furthermore, health guidelines and possible plans for airlines to protect their customers and their own economic
         interests are outlined as well.</p>
     </div>
     <!-- <hr id="horiz" /> -->
     <div id="header3">
       <h2 class="center"><a href="report.pdf" target="_blank">PROJECT REPORT</a></h2>
       <p>After gathering data and analysing trends, the team wrote a report outlining their research.
-        It covers the pre-pandemic conditions of the aviation industry and the impacts of COVID-19 on the industry. Furthermore, it compares the COVID-19 pandemic to previous
+        It covers the pre-pandemic conditions of the aviation industry and the impacts of COVID-19 on the industry.
+        Furthermore, it compares the COVID-19 pandemic to previous
         crises and outlines recommendations for the future.
       </p>
       <p><a href="report.pdf" target="_blank"><span style="color: blue">CLICK HERE TO SEE REPORT</span></a></p>
@@ -118,12 +135,16 @@
     </div>
   </div>
   -->
-  <div id="footer">
-    <div id="strip">
-    </div>
-    <div id="footerbar">
+
+  <div id="strip">
+  </div>
+  <div id="footerbar">
+    
+    <img id="footerlogo" src="../assets/footeratomfull.png" alt="ATOM Logo" width="205" height="74">
+    
+    <div class="verti-flex">
+    
     <div class="flex-container">
-      <img id="footerlogo" src="../assets/footeratomfull.png" alt="ATOM Logo" width="205" height="74">
       <div id="footerwrappertxt">
         <div id="about-us" class="center">
           <h4><a href="about-us.html">About Us</a></h4>
@@ -136,13 +157,17 @@
       </div>
       <div id="footerwrappertxt">
         <div class="center">
-          <h4><a href="https://www.aviationsystemsdivision.arc.nasa.gov/index.shtml">NASA Aviation Systems Division</h4></a>
+          <h4><a href="https://www.aviationsystemsdivision.arc.nasa.gov/index.shtml">NASA Aviation Systems Division</h4>
+          </a>
         </div>
       </div>
     </div>
-    <h5 style="color: rgb(2, 2, 54);" class="center">Authors: Trishala Jain, Vikram Menon, Derek Nease, Cole Robins, Kimia Sattary</h5>
-  </div>
-  </div>
+    <h5 class="center authors">Authors: Trishala Jain, Vikram Menon, Derek Nease, Cole Robins,
+      Kimia Sattary</h5>
+    </div>
+  
+    </div>
+
   <script>
     let texts = document.getElementsByClassName("hoverbox");
     texts[0].style.display = "block";
@@ -160,13 +185,13 @@
     icon0.style.borderWidth = "5px";
     icon0.style.borderRadius = "20%";
 
-    icon0.addEventListener("mouseover", function(){subhover(0);});
-    icon1.addEventListener("mouseover", function(){subhover(1);});
-    icon2.addEventListener("mouseover", function(){subhover(2);});
-    icon3.addEventListener("mouseover", function(){subhover(3);});
-    icon4.addEventListener("mouseover", function(){subhover(4);});
+    icon0.addEventListener("mouseover", function () { subhover(0); });
+    icon1.addEventListener("mouseover", function () { subhover(1); });
+    icon2.addEventListener("mouseover", function () { subhover(2); });
+    icon3.addEventListener("mouseover", function () { subhover(3); });
+    icon4.addEventListener("mouseover", function () { subhover(4); });
 
-    function test(){
+    function test() {
       console.log("test");
       alert("privet");
     }

@@ -129,12 +129,14 @@ caption{
   margin: auto;
 }
 #wrapper {
-  width: 1000px;
+  width: 60%;
+  min-width: 400px;
   margin: auto;
   background-color: black;
 }
 #stwrapper {
-  width: 800px;
+  width: 60%;
+  min-width: 400px;
   /* margin-left: 200px; */
   margin: auto;
   background-color: black;
@@ -159,7 +161,21 @@ body {
 }
 #atomlogo {
   margin: 20px 20px 0px 30px;
+  width: 15%;
+  min-width: 200px;
+  max-width: 400px;
   float: left;
+}
+.corona{
+  width: 8%;
+  position: fixed;
+  top:1%; 
+  right: 1%;
+  
+  min-width: 90px;
+  max-width: 400px;
+  float: right;
+
 }
 #header1 {
   width: 100%;
@@ -173,19 +189,20 @@ body {
   float: right;
 }
 #titlewrapper{
-  width: 1000px;
+  width: 60%;
+  min-width: 400px;
   margin: auto;
   padding-top: 30px;
 }
 #title1 {
-  width: auto;
   color: white;
   /* font-size: 65px; */
   font-size: 55px;
   font-family: 'Dosis', sans-serif;
   font-weight: lighter;
   float: left;
-  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 0;
   /*background-color: blue;*/
 }
 #title2 {
@@ -212,19 +229,19 @@ body {
 }
 #subheader {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
   text-align: justify;
   /*background-color: pink;*/
 }
+
 #graph{
-  width: 1000px;
-  height: 700px;
-  /* background-color: magenta; */
+
+  min-height: 200px;
+  max-height: 900px;
 }
+
 #stgraph{
   width: 800px;
-  height: 500px;
+  height: 600px;
   /* background-color: magenta; */
 }
 #stgraphtext{
@@ -322,7 +339,7 @@ body {
   /*background-color: blue;*/
 }
 #stdscrpwrapper{
-  width: 700px;
+  width: 100%;
   margin: auto;
 }
 #subbody{
@@ -374,35 +391,34 @@ body {
 }
 #footerbar{
   width: 100%;
-  height: 150px;
-  margin: 0px 0px 0px 0px;
+
+  margin: 0px 0px 10px 0px;
   background-color: #0b3d91;
 }
 #footerlogo {
-  margin: 30px 0px 0px 30px;
+  float:left;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 #footerwrappertxt{
-  width: 700px;
+
+  min-width: 350px;
   margin: auto;
-}
-.iconrow {
-  width: 800px;
-  height: 85px;
-  margin: auto;
-  white-space: nowrap;
-  /*background-color: magenta;*/
-}
-.iconrow img{
-  /*background-color: blue;*/
-  display: inline;
-  margin-left: 41px;
-  margin-right: 41px;
 }
 
-img.center {
-  margin: auto;
-  display: block;
+.iconrow{
+  width: 100%;
+  min-width: 200px;
+  height: 85px;
+  /*background-color: blue;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+
 }
+
 .center {
   text-align: center;
 }
@@ -410,6 +426,7 @@ img.center {
   vertical-align: middle;
 }
 .iconbutton{
+  
   border-style: solid;
   border-color: rgba(255, 255, 255, 0);
   border-width: 5px;
@@ -490,14 +507,36 @@ td{
 .flex-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-
+  flex-flow: row wrap;
+  padding-top: 25px;
+}
+ .flex-container > div{
+  width:50px;
+  padding:0px;
+  background-color: #ff5c43;
+  text-align: center;
+  
+}
+.verti-flex{
+  display: flex;
+  flex-direction: column;
 }
 .profile-pic{
-  width: 200px;
+  width: 1000px;
   height: 200px;
   padding-bottom: 60px;
   padding-top: 60px;
+
+}
+.authors{
+  width: 90%;
+  position: relative;
+  align-self: center;
+  padding-bottom: 1%;
+  color: rgb(120, 120, 243);
+}
+.plotly-graph-div{
+  
+
 
 }
