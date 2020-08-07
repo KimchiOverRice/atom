@@ -5,33 +5,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Economics | Team ATOM</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../assets/atomnotxt_favicon.ico">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-  <script src="plotly-latest.min.js"></script>
+  <script src="../graphs/plotly-latest.min.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174711189-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174711189-1');
+  </script>
 </head>
 
 <body>
   <div id="sidenav">
-    <div id="sidenav_container" class="center">
-      <div id="stlogo">
-        <a href="index.html"><img id="statomlogo" src="atomnotxt.png" alt="ATOM Logo" width="79" height="67"></a>
-      </div>
-      <div class="iconbar">
-        <a href="st-passenger-air-travel.html"><img src="passenger-icon.png" alt="fooicon" width="60" height="60" /></a>
-        <h6>Passenger Air Travel</h6>
-        <a href="st-economics.html"><img src="economics-icon.png" alt="fooicon" width="60" height="60" /></a>
-        <h6>Economics</h6>
-        <a href="st-environment.html"><img src="environement-icon.png" alt="fooicon" width="60" height="60" /></a>
-        <h6>Environment</h6>
-        <a href="st-manufacturing.html"><img src="manufacturing-icon.png" alt="fooicon" width="60" height="60" /></a>
-        <h6>Manufacturing</h6>
-        <a href="st-cargo.html"><img src="cargo-icon.png" alt="fooicon" width="60" height="60" /></a>
-        <h6>Cargo</h6>
+      <div id="sidenav_container" class="center">
+        <div id="stlogo">
+          <a href="index.html"><img id="statomlogo" src="../assets/atomnotxt.png" alt="ATOM Logo" width="79" height="79"></a>
+          <img style="position: fixed; right: 20px; top: 5px;" src="coronavirus_plane.gif" width="110" height="110">
+        </div>
+        <div class="iconbar">
+          <a href="st-passenger-air-travel.html"><img src="../assets/passenger-icon.png" class="iconbutton hoverbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Passenger Air Travel</h6>
+          <a href="st-economics.html"><img src="../assets/economics-icon.png" class="iconbutton currentbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Economics</h6>
+          <a href="st-environment.html"><img src="../assets/environment-icon.png" class="iconbutton hoverbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Environment</h6>
+          <a href="st-manufacturing.html"><img src="../assets/manufacturing-icon.png" class="iconbutton hoverbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Manufacturing</h6>
+          <a href="st-cargo.html"><img src="../assets/cargo-icon.png" class="iconbutton hoverbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Cargo</h6>
+          <a href="recommendations.html"><img src="../assets/rec-icon.png" class="iconbutton hoverbutton separatebutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Recommendations</h6>
+          <a href="report.pdf" target="_blank"><img src="../assets/report-icon.png" class="iconbutton hoverbutton" alt="fooicon" width="60" height="60" /></a>
+          <h6>Project Report</h6>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <div id="stwrapper">
     <div id="header1" class="center">
@@ -54,17 +70,17 @@
         <div class="graphslide">
           <div id="48e47fca-5364-4c05-90fa-ede330f48470" class="plotly-graph-div" style="height:500px; width:700px;">
           </div>
-          <script type="text/javascript" src="econplt1-stockprices.js"></script>
+          <script type="text/javascript" src="../graphs/econplt1-stockprices.js"></script>
         </div>
         <div class="graphslide" style="display: none">
           <div id="d108cfc3-588a-42c2-b4ac-ed6251bd08d5" class="plotly-graph-div" style="height:500px; width:700px;">
           </div>
-          <script type="text/javascript" src="econplt2-caresact.js"></script>
+          <script type="text/javascript" src="../graphs/econplt2-caresact.js"></script>
         </div>
         <div class="graphslide" style="display: none">
           <div id="5e90b8a7-f59f-4cec-b4a6-afb7a417e414" class="plotly-graph-div" style="height:500px; width:700px;">
           </div>
-          <script type="text/javascript" src="econplt3-netloss.js"></script>
+          <script type="text/javascript" src="../graphs/econplt3-netloss.js"></script>
         </div>
       </div>
       <div id="stplotright">
@@ -126,7 +142,7 @@
       </table>
 
       <br>
-      <h5>THE CARES ACT</h5>
+      <h3 style="color: #fdc814;">THE CARES ACT</h3>
 
       <p>These losses have resulted in airline corporations dropping in value as investors are not receiving the returns
         they expected. Federal funding has played a
@@ -164,7 +180,7 @@
       <p id="intextsource"><a href="https://mitchell.house.gov/sites/mitchell.house.gov/files/documents/3.26_CARES_Act_T_I_Info.01.pdf">
         (Source: Highlights of the Coronavirus Aid, Relief, and Economic Security Act (CARES Act))</a></p>
       <br>
-      <h5>MERGERS AND BANKRUPTCY </h5>
+      <h3 style="color: #fdc814;">MERGERS AND BANKRUPTCY </h3>
 
       <p>Despite federal aid, there were airlines that did not make it through the pandemic. 
         <a href="https://www.forbes.com/sites/laurabegleybloom/2020/06/27/airlines-coronavirus-travel-bankruptcy/#710117ae5f69">Some companies</a>
@@ -184,71 +200,42 @@
       <br><br>
       <h5 id="intextsource">SOURCES:</h5>
       <p id="intextsource">
-        Makani air
-        <br>https://www.makanikaiair.com/
-        <br>Miami air
-        <br>https://www.businessinsider.com/miami-air-international-liquidate-coronavirus-cares-act-2020-5
-        <br>
-        <br>Trans states and compass
-        <br>https://paxex.aero/2020/03/trans-states-airlines-covid-19/
-        <br>https://www.aerotime.aero/zivile.zalagenaite/24702-compass-airlines-to-cease-operations
-        <br>
-        <br>Ravn air
-        <br>https://www.alaskapublic.org/2020/04/30/amid-bankruptcy-ravn-begs-for-social-media-support-customer-reaction-is-mixed/
-        <br>https://www.alaskapublic.org/2020/04/28/ravn-files-plan-to-liquidate-as-bankruptcy-proceeds/
-        <br>
-        <br>Bbc worst year on record + slow recovery
-        <br>https://www.bbc.com/news/business-52983756
-        <br>https://www.bloomberg.com/news/articles/2020-04-14/airline-industry-now-sees-314-billion-in-lost-2020-ticket-sales
-        <br>Delta Cashburn
-        <br>https://www.forbes.com/sites/greatspeculations/2020/06/26/huge-cash-burn-and-stock-down-55-can-delta-recover/#699c76b33a73
-        <br>Cashburn per plane
-        <br>https://www.forbes.com/sites/jamesasquith/2020/03/31/analysis-how-much-money-do-empty-flights-really-cost-airlines/#5895a2f65854
-        <br>https://www.barrons.com/articles/delta-reports-its-first-quarterly-loss-in-more-than-5-years-51587560418
-        <br>https://www.seattletimes.com/business/boeing-aerospace/alaska-reduces-cash-outflow-but-is-still-burning-5-5-million-a-day/
-        <br>
-        <br>The cares act
-        <br>https://home.treasury.gov/policy-issues/cares
-        <br>https://home.treasury.gov/news/press-releases/treasury-implementing-cares-act-programs-for-aviation-and-national-security-industries
-        <br>Pdf of cares act for aviation
-        <br>https://mitchell.house.gov/sites/mitchell.house.gov/files/documents/3.26_CARES_Act_T_I_Info.01.pdf
-        <br>
-        <br>84.3b
-        <br>https://www.iata.org/en/pressroom/pr/2020-06-09-01/
-        <br>
-        <br>95% ½ grounded
-        <br>https://www.cntraveler.com/story/coronavirus-air-travel-these-numbers-show-the-massive-impact-of-the-pandemic#:~:text=Air%20passenger%20traffic%20is%20down%2095%20percent&text=On%20April%207%2C%20the%20total,people%20passed%20through%20the%20checkpoints.
-        <br>
-        <br>Load factor
-        <br>https://www.forbes.com/sites/jamesasquith/2020/03/31/analysis-how-much-money-do-empty-flights-really-cost-airlines/#5895a2f65854
-        <br>
-        <br>Southwest and Delta
-        <br>https://www.cnbc.com/2020/04/23/coronavirus-us-airlines-set-to-report-their-first-losses-in-years-as-travel-demand-falls.html
-        <br>
-        <br>Bankruptcy
-        <br>https://www.businessinsider.com/coronavirus-airlines-that-failed-bankrupt-covid19-pandemic-2020-3#trans-states-airlines-us-march-2020-2
-        <br>
-        <br>Cdc contact tracing
-        <br>https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/contact-tracing.html
-        <br>
-        <br>Iata quarantine alternatives
-        <br>https://www.iata.org/en/pressroom/pr/2020-06-24-02/
-        <br>
-        <br>Voluntary leave
-        <br>https://www.cnbc.com/2020/06/09/airline-employees-wrestle-with-voluntary-separation-leave.html
+        Closing Stock Prices Graph:
+        <a id="intextsource" href="https://finance.yahoo.com/quote/AAL/">American Airlines (AAL), </a>
+        <a id="intextsource" href ="https://finance.yahoo.com/quote/ALGT/">Allegiant Airlines (ALGT), </a>
+        <a id="intextsource" href ="https://finance.yahoo.com/quote/ALK/">Alaska Airlines (ALK), </a>
+        <a id="intextsource" href="https://finance.yahoo.com/quote/DAL/">Delta Airlines (DAL), </a>
+        <a id="intextsource" href="https://finance.yahoo.com/quote/HA/">Hawaiian Airlines (HA), </a>
+        <a id="intextsource" href ="https://finance.yahoo.com/quote/JBLU/">JetBlue Airlies (JBLU), </a>
+        <a id="intextsource" href="https://finance.yahoo.com/quote/LUV/">Southwest Airlines (LUV), </a>
+        <a id="intextsource" href="https://finance.yahoo.com/quote/SAVE/history?p=SAVE">Spirit Airlines (SAVE), </a>
+        <a id="intextsource" href="https://www.marketwatch.com/investing/stock/ual">United Airlines (UAL)</a>
       </p>
     </div>
   </div>
   <div id="footer">
-    <div id="ststrip">
+    <div id="strip">
     </div>
     <div id="footerbar">
-      <img id="footerlogo" src="footeratomfull.png" alt="ATOM Logo" width="190" height="83">
-      <div id="footerwrappertxt">
-        <div id="footertext" class="center">
-          <h4>[fix pos]Team info and member names</h4>
+      <div class="flex-container">
+        <a href="index.html"><img id="footerlogo" src="../assets/footeratomfull.png" alt="ATOM Logo" width="232" height="83"></a>
+        <div id="footerwrappertxt">
+          <div id="footertext" class="center">
+            <h4><a href="about-us.html">About Us</a></h4>
+          </div>
+        </div>
+        <div id="footerwrappertxt">
+          <div id="footertext" class="center">
+            <h4><a href="https://www.nasa.gov/ames">NASA Ames Research Center</a></h4>
+          </div>
+        </div>
+        <div id="footerwrappertxt">
+          <div id="footertext" class="center">
+            <h4><a href="https://www.aviationsystemsdivision.arc.nasa.gov/index.shtml">NASA Aviation Systems Division</h4></a>
+          </div>
         </div>
       </div>
+    <h5 style="color: rgb(2, 2, 54);" class="center">Authors: Trishala Jain, Vikram Menon, Derek Nease, Cole Robins, Kimia Sattary</h5>
     </div>
   </div>
     <script>
